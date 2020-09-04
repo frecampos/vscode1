@@ -1,0 +1,44 @@
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    /* 6 hacia arriba y 0 a los costados*/
+    cursor: pointer;
+    /*cuando pase el mouse se observe una manito*/
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    /* para que parta desde abajo de la barra*/
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*100% del alto del dispositivo*/
+    background: rgb(51, 51, 51, 0.9);
+    /* transparencia de 0.9*/
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.menu a:hover {
+    background: rgb(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+#menu-bar:checked~.menu {
+    transform: translateX(0);
+}

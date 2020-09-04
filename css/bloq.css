@@ -1,0 +1,22 @@
+#blog h3,
+h4 {
+    text-align: center;
+}
+
+#blog .contenedor {
+    display: flex;
+    /*se presentara bajo el formato de flecbox*/
+    justify-content: center;
+    /*se justifica el contenido*/
+    flex-wrap: wrap;
+    /*si no cabe se bajan automaticamente*/
+}
+
+#blog .contenedor img {
+    width: 250px;
+    height: 250px;
+}
+
+#blog article {
+    margin: 15px;
+}
